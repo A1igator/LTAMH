@@ -13,7 +13,7 @@ module.exports = class Menu {
       300,
       300,
       ctx,
-      '../../Art/2D/female1_spritesheet.png',
+      './Art/2D/female1_spritesheet.png',
     );
     this.playerOp2 = new Player(
       canvas.width / 3 - 150,
@@ -21,7 +21,7 @@ module.exports = class Menu {
       300,
       300,
       ctx,
-      '../../Art/2D/female2_spritesheet.png',
+      './Art/2D/female2_spritesheet.png',
     );
     this.playerOp3 = new Player(
       (canvas.width / 9) * 8 - 150,
@@ -29,7 +29,7 @@ module.exports = class Menu {
       300,
       300,
       ctx,
-      '../../Art/2D/male1_spritesheet.png',
+      './Art/2D/male1_spritesheet.png',
     );
     this.playerOp4 = new Player(
       (canvas.width / 3) * 2 - 150,
@@ -37,7 +37,7 @@ module.exports = class Menu {
       300,
       300,
       ctx,
-      '../../Art/2D/male2_spritesheet.png',
+      './Art/2D/male2_spritesheet.png',
     );
     this.playerOp1.draw();
     this.playerOp2.draw();
@@ -119,7 +119,7 @@ module.exports = class Menu {
               && e.clientY < canvas.height / 3 + 300
             ) {
               console.log('player1 selected');
-              this.player.setImage('../../Art/2D/female1_spritesheet.png');
+              this.player.setImage('./Art/2D/female1_spritesheet.png');
               this.animateOp = 0;
               switchBackTo2D();
               canvas.removeEventListener('mousemove', this);
@@ -137,7 +137,7 @@ module.exports = class Menu {
               && e.clientY < canvas.height / 3 + 300
             ) {
               console.log('player2 selected');
-              this.player.setImage('../../Art/2D/female2_spritesheet.png');
+              this.player.setImage('./Art/2D/female2_spritesheet.png');
               this.animateOp = 0;
               switchBackTo2D();
               canvas.removeEventListener('mousemove', this);
@@ -155,7 +155,7 @@ module.exports = class Menu {
               && e.clientY < canvas.height / 3 + 300
             ) {
               console.log('player3 selected');
-              this.player.setImage('../../Art/2D/male1_spritesheet.png');
+              this.player.setImage('./Art/2D/male1_spritesheet.png');
               this.animateOp = 0;
               switchBackTo2D();
               canvas.removeEventListener('mousemove', this);
@@ -173,7 +173,7 @@ module.exports = class Menu {
               && e.clientY < canvas.height / 3 + 300
             ) {
               console.log('player4 selected');
-              this.player.setImage('../../Art/2D/male2_spritesheet.png');
+              this.player.setImage('./Art/2D/male2_spritesheet.png');
               this.animateOp = 0;
               switchBackTo2D();
               canvas.removeEventListener('mousemove', this);

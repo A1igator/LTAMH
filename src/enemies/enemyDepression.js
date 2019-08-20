@@ -5,7 +5,7 @@ module.exports = class EnemyDepression extends Enemy {
     super(x, y, dir, mapArray);
     this.speed = 1.5;
     this.animationSpeed = 0.07;
-    this.sprite.src = '../../Art/2D/enemy_depression_spritesheet.png';
+    this.sprite.src = './Art/2D/enemy_depression_spritesheet.png';
     this.animationSize = 4;
   }
 };

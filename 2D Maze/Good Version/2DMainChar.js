@@ -31,7 +31,7 @@ module.exports = class MainCharacter {
     resetCharacter,
   ) {
     this.image = new Image();
-    this.image.src = '../../Art/2D/female2_spritesheet.png';
+    this.image.src = './Art/2D/female2_spritesheet.png';
     this.camera = undefined;
     this.x = x;
     this.y = y;

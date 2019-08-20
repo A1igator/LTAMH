@@ -5,7 +5,7 @@ module.exports = class EnemyAnxiety extends Enemy {
     super(x, y, dir, mapArray);
     this.speed = 3.2;
     this.animationSpeed = 0.18;
-    this.sprite.src = '../../Art/2D/enemy_anxiety_spritesheet.png';
+    this.sprite.src = './Art/2D/enemy_anxiety_spritesheet.png';
     this.animationSize = 3;
   }
 };

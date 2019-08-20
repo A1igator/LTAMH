@@ -8,7 +8,7 @@ module.exports = class Teacher {
     this.speed = speed;
     this.goForward = false;
     this.sprite = new Image();
-    this.sprite.src = '../../Art/2D/teacher_sprite.png';
+    this.sprite.src = './Art/2D/teacher_sprite.png';
   }
 
   draw() {

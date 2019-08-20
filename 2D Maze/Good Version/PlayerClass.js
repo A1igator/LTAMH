@@ -6,7 +6,7 @@ class Player {
     this.W = w;
     this.ctx = ctx;
     this.sprite = new Image();
-    this.sprite.src = '../../Art/2D/female2_spritesheet.png';
+    this.sprite.src = './Art/2D/female2_spritesheet.png';
     this.spriteIndex = 0;
     this.animationSize = 8;
     this.animationSpeed = 0.54;

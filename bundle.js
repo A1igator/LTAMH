@@ -48400,16 +48400,16 @@ console.log(canvas);
 
 // Load the tilemap.
 const tilemap = new Image();
-tilemap.src = '../../Art/2D/tilemap.png';
+tilemap.src = './Art/2D/tilemap.png';
 
 const doorTilemap = new Image();
-doorTilemap.src = '../../Art/2D/door_spritesheet.png';
+doorTilemap.src = './Art/2D/door_spritesheet.png';
 
 const spriteKeysCollected = new Image();
-spriteKeysCollected.src = '../../Art/2D/keys_collected.png';
+spriteKeysCollected.src = './Art/2D/keys_collected.png';
 
 const spriteWallBreakerIndicator = new Image();
-spriteWallBreakerIndicator.src = '../../Art/2D/wall_breaker_indicator.png';
+spriteWallBreakerIndicator.src = './Art/2D/wall_breaker_indicator.png';
 
 // eslint-disable-next-line no-unused-vars
 let gameObjects = [];
@@ -49281,7 +49281,7 @@ module.exports = class MainCharacter {
     resetCharacter,
   ) {
     this.image = new Image();
-    this.image.src = '../../Art/2D/female2_spritesheet.png';
+    this.image.src = './Art/2D/female2_spritesheet.png';
     this.camera = undefined;
     this.x = x;
     this.y = y;
@@ -49876,9 +49876,9 @@ module.exports = class miniGame {
       foreground: new Image(),
     };
 
-    this.scene.background.src = '../../Art/2D/minigame/background.png';
-    this.scene.ground.src = '../../Art/2D/minigame/ground.png';
-    this.scene.foreground.src = '../../Art/2D/minigame/foreground_detail.png';
+    this.scene.background.src = './Art/2D/minigame/background.png';
+    this.scene.ground.src = './Art/2D/minigame/ground.png';
+    this.scene.foreground.src = './Art/2D/minigame/foreground_detail.png';
     console.log(this.playerArt);
     console.log(this.playerArt.src);
     console.log(`${this.playerArt.src}player Art`);
@@ -51604,7 +51604,7 @@ module.exports = class EnemyAnxiety extends Enemy {
     super(x, y, dir, mapArray);
     this.speed = 3.2;
     this.animationSpeed = 0.18;
-    this.sprite.src = '../../Art/2D/enemy_anxiety_spritesheet.png';
+    this.sprite.src = './Art/2D/enemy_anxiety_spritesheet.png';
     this.animationSize = 3;
   }
 };
@@ -51617,7 +51617,7 @@ module.exports = class EnemyBPD extends Enemy {
     super(x, y, dir, mapArray);
     this.speed = 2.4;
     this.animationSpeed = 0.1;
-    this.sprite.src = '../../Art/2D/enemy_borderline_personality_disorder_spritesheet.png';
+    this.sprite.src = './Art/2D/enemy_borderline_personality_disorder_spritesheet.png';
     this.animationSize = 4;
   }
 };
@@ -51630,7 +51630,7 @@ module.exports = class EnemyDepression extends Enemy {
     super(x, y, dir, mapArray);
     this.speed = 1.5;
     this.animationSpeed = 0.07;
-    this.sprite.src = '../../Art/2D/enemy_depression_spritesheet.png';
+    this.sprite.src = './Art/2D/enemy_depression_spritesheet.png';
     this.animationSize = 4;
   }
 };
@@ -51643,11 +51643,11 @@ const EnemyDepression = require('./enemies/enemyDepression');
 module.exports = class EnemyController {
   constructor() {
     // this.spriteEnemyAnxiety = new Image();
-    // this.spriteEnemyAnxiety.src = '../../Art/2D/enemy_anxiety_spritesheet.png';
+    // this.spriteEnemyAnxiety.src = './Art/2D/enemy_anxiety_spritesheet.png';
     // this.spriteEnemyBPD = new Image();
-    // this.spriteEnemyBPD.src = '../../Art/2D/enemy_borderline_personality_disorderanxiety_spritesheet.png';
+    // this.spriteEnemyBPD.src = './Art/2D/enemy_borderline_personality_disorderanxiety_spritesheet.png';
     // this.spriteEnemyDepression = new Image();
-    // this.spriteEnemyDepression = '../../Art/2D/enemy_depression_spritesheet.png';
+    // this.spriteEnemyDepression = './Art/2D/enemy_depression_spritesheet.png';
     this.enemiesSpawned = 0;
     this.enemies = [];
   }
@@ -52099,7 +52099,7 @@ module.exports = class Key {
     this.x = x;
     this.y = y;
     this.sprite = new Image();
-    this.sprite.src = '../../Art/2D/key_spritesheet.png';
+    this.sprite.src = './Art/2D/key_spritesheet.png';
     this.width = 128;
     this.height = 128;
     this.spriteIndex = 0;
@@ -52174,7 +52174,7 @@ module.exports = class MapPowerup {
     this.width = 128;
     this.height = 128;
     this.sprite = new Image();
-    this.sprite.src = '../../Art/2D/map_powerup_spritesheet.png';
+    this.sprite.src = './Art/2D/map_powerup_spritesheet.png';
     this.spriteIndex = 0;
     this.animationSpeed = 0.16;
     this.animationSize = 8;
@@ -52214,7 +52214,7 @@ module.exports = class Menu {
       300,
       300,
       ctx,
-      '../../Art/2D/female1_spritesheet.png',
+      './Art/2D/female1_spritesheet.png',
     );
     this.playerOp2 = new Player(
       canvas.width / 3 - 150,
@@ -52222,7 +52222,7 @@ module.exports = class Menu {
       300,
       300,
       ctx,
-      '../../Art/2D/female2_spritesheet.png',
+      './Art/2D/female2_spritesheet.png',
     );
     this.playerOp3 = new Player(
       (canvas.width / 9) * 8 - 150,
@@ -52230,7 +52230,7 @@ module.exports = class Menu {
       300,
       300,
       ctx,
-      '../../Art/2D/male1_spritesheet.png',
+      './Art/2D/male1_spritesheet.png',
     );
     this.playerOp4 = new Player(
       (canvas.width / 3) * 2 - 150,
@@ -52238,7 +52238,7 @@ module.exports = class Menu {
       300,
       300,
       ctx,
-      '../../Art/2D/male2_spritesheet.png',
+      './Art/2D/male2_spritesheet.png',
     );
     this.playerOp1.draw();
     this.playerOp2.draw();
@@ -52320,7 +52320,7 @@ module.exports = class Menu {
               && e.clientY < canvas.height / 3 + 300
             ) {
               console.log('player1 selected');
-              this.player.setImage('../../Art/2D/female1_spritesheet.png');
+              this.player.setImage('./Art/2D/female1_spritesheet.png');
               this.animateOp = 0;
               switchBackTo2D();
               canvas.removeEventListener('mousemove', this);
@@ -52338,7 +52338,7 @@ module.exports = class Menu {
               && e.clientY < canvas.height / 3 + 300
             ) {
               console.log('player2 selected');
-              this.player.setImage('../../Art/2D/female2_spritesheet.png');
+              this.player.setImage('./Art/2D/female2_spritesheet.png');
               this.animateOp = 0;
               switchBackTo2D();
               canvas.removeEventListener('mousemove', this);
@@ -52356,7 +52356,7 @@ module.exports = class Menu {
               && e.clientY < canvas.height / 3 + 300
             ) {
               console.log('player3 selected');
-              this.player.setImage('../../Art/2D/male1_spritesheet.png');
+              this.player.setImage('./Art/2D/male1_spritesheet.png');
               this.animateOp = 0;
               switchBackTo2D();
               canvas.removeEventListener('mousemove', this);
@@ -52374,7 +52374,7 @@ module.exports = class Menu {
               && e.clientY < canvas.height / 3 + 300
             ) {
               console.log('player4 selected');
-              this.player.setImage('../../Art/2D/male2_spritesheet.png');
+              this.player.setImage('./Art/2D/male2_spritesheet.png');
               this.animateOp = 0;
               switchBackTo2D();
               canvas.removeEventListener('mousemove', this);
@@ -52636,7 +52636,7 @@ module.exports = class SpeedPowerup {
     this.width = 128;
     this.height = 128;
     this.sprite = new Image();
-    this.sprite.src = '../../Art/2D/speed_powerup_spritesheet.png';
+    this.sprite.src = './Art/2D/speed_powerup_spritesheet.png';
     this.spriteIndex = 0;
     this.animationSpeed = 0.16;
     this.animationSize = 8;
@@ -52668,7 +52668,7 @@ module.exports = class SpikeTrap {
     this.width = 128;
     this.height = 128;
     this.sprite = new Image();
-    this.sprite.src = '../../Art/2D/spiketrap_spritesheet.png';
+    this.sprite.src = './Art/2D/spiketrap_spritesheet.png';
     this.animationSize = 2;
     this.spriteIndex = 0;
     this.animationSpeed = 0.01;
@@ -52703,7 +52703,7 @@ module.exports = class Teacher {
     this.speed = speed;
     this.goForward = false;
     this.sprite = new Image();
-    this.sprite.src = '../../Art/2D/teacher_sprite.png';
+    this.sprite.src = './Art/2D/teacher_sprite.png';
   }
 
   draw() {
@@ -52732,7 +52732,7 @@ module.exports = class Teleporter {
     this.width = 128;
     this.height = 128;
     this.sprite = new Image();
-    this.sprite.src = '../../Art/2D/teleporter_spritesheet.png';
+    this.sprite.src = './Art/2D/teleporter_spritesheet.png';
     this.spriteIndex = 0;
     this.animationSpeed = 0.16;
     this.animationSize = 8;
@@ -52833,7 +52833,7 @@ module.exports = class WallBreakerPowerup {
     this.width = 128;
     this.height = 128;
     this.sprite = new Image();
-    this.sprite.src = '../../Art/2D/wall_breaker_powerup_spritesheet.png';
+    this.sprite.src = './Art/2D/wall_breaker_powerup_spritesheet.png';
     this.spriteIndex = 0;
     this.animationSpeed = 0.16;
     this.animationSize = 8;

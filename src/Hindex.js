@@ -25,9 +25,9 @@ module.exports = class miniGame {
       foreground: new Image(),
     };
 
-    this.scene.background.src = '../../Art/2D/minigame/background.png';
-    this.scene.ground.src = '../../Art/2D/minigame/ground.png';
-    this.scene.foreground.src = '../../Art/2D/minigame/foreground_detail.png';
+    this.scene.background.src = './Art/2D/minigame/background.png';
+    this.scene.ground.src = './Art/2D/minigame/ground.png';
+    this.scene.foreground.src = './Art/2D/minigame/foreground_detail.png';
     console.log(this.playerArt);
     console.log(this.playerArt.src);
     console.log(`${this.playerArt.src}player Art`);

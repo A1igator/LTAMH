@@ -12,7 +12,7 @@ miniMap.height = window.innerWidth / 7;
 
 // Load the tilemap.
 const tilemap = new Image();
-tilemap.src = '../../Art/2D/tilemap.png';
+tilemap.src = './Art/2D/tilemap.png';
 
 // eslint-disable-next-line no-unused-vars
 const drawOrder = [];

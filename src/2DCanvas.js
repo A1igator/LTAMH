@@ -37,16 +37,16 @@ console.log(canvas);
 
 // Load the tilemap.
 const tilemap = new Image();
-tilemap.src = '../../Art/2D/tilemap.png';
+tilemap.src = './Art/2D/tilemap.png';
 
 const doorTilemap = new Image();
-doorTilemap.src = '../../Art/2D/door_spritesheet.png';
+doorTilemap.src = './Art/2D/door_spritesheet.png';
 
 const spriteKeysCollected = new Image();
-spriteKeysCollected.src = '../../Art/2D/keys_collected.png';
+spriteKeysCollected.src = './Art/2D/keys_collected.png';
 
 const spriteWallBreakerIndicator = new Image();
-spriteWallBreakerIndicator.src = '../../Art/2D/wall_breaker_indicator.png';
+spriteWallBreakerIndicator.src = './Art/2D/wall_breaker_indicator.png';
 
 // eslint-disable-next-line no-unused-vars
 let gameObjects = [];

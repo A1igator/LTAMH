@@ -14,11 +14,11 @@ const scene = {
   foreground: new Image(),
 };
 
-scene.background.src = '../../Art/2D/minigame/background.png';
-scene.ground.src = '../../Art/2D/minigame/ground.png';
-scene.foreground.src = '../../Art/2D/minigame/foreground_detail.png';
+scene.background.src = './Art/2D/minigame/background.png';
+scene.ground.src = './Art/2D/minigame/ground.png';
+scene.foreground.src = './Art/2D/minigame/foreground_detail.png';
 
-const player = new Player(300, canvas.height / 2 + 100, 30, 90, ctx, '../../Art/2D/female2_spritesheet.png');
+const player = new Player(300, canvas.height / 2 + 100, 30, 90, ctx, './Art/2D/female2_spritesheet.png');
 const floorHeight = player.y + player.H;
 // const block = new Block(canvas.width, floorHeight - 80, 40, 80, 50, ctx);
 
